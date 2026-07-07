@@ -1,7 +1,11 @@
+
+$target = "$env:LOCALAPPDATA\nvim"
+
 Copy-Item `
-".\nvim-config\*" `
-"$env:LOCALAPPDATA\nvim" `
--Recurse -Force
+"$PSScriptRoot\*" `
+$target `
+-Recurse `
+-Force
 
 Write-Host ""
 Write-Host "=== Rafael Neovim Bootstrap ==="
