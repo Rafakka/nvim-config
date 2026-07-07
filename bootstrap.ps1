@@ -11,5 +11,7 @@ Write-Host ""
 . "$PSScriptRoot\scripts\install-tools.ps1"
 
 Write-Host ""
-Write-Host "Bootstrap completed!"
-Write-Host "Open Neovim and wait for Lazy + Mason."
+Write-Host "Starting Neovim..."
+Write-Host ""
+
+nvim
