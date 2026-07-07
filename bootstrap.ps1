@@ -1,3 +1,8 @@
+Copy-Item `
+".\nvim-config\*" `
+"$env:LOCALAPPDATA\nvim" `
+-Recurse -Force
+
 Write-Host ""
 Write-Host "=== Rafael Neovim Bootstrap ==="
 Write-Host ""
