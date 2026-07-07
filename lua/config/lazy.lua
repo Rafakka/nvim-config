@@ -29,12 +29,26 @@ require("lazy").setup({
         },
     },
     {
+    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    },
+    {
         "folke/which-key.nvim",
     },
     {
     "williamboman/mason.nvim",
+
     config = function()
         require("mason").setup()
+
+        require("mason-tool-installer").setup({
+            ensure_installed = {
+                "pyright",
+                "vtsls",
+            },
+
+            auto_update = false,
+            run_on_start = true,
+        })
     end,
     },
     {
