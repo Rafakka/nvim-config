@@ -1,14 +1,15 @@
 Write-Host ""
-Write-Host "=== Installing Development Tools ==="
+Write-Host "=== Rafael Neovim Bootstrap ==="
 Write-Host ""
 
-winget install BurntSushi.ripgrep
-winget install sharkdp.fd
+. "$PSScriptRoot\scripts\helpers.ps1"
 
-npm install -g tree-sitter-cli
-npm install -g neovim
+. "$PSScriptRoot\scripts\install-node.ps1"
 
-pip install pynvim
+. "$PSScriptRoot\scripts\install-python.ps1"
+
+. "$PSScriptRoot\scripts\install-tools.ps1"
 
 Write-Host ""
-Write-Host "Done!"
+Write-Host "Bootstrap completed!"
+Write-Host "Open Neovim and wait for Lazy + Mason."
