@@ -51,16 +51,17 @@ require("lazy").setup({
         require("mason").setup()
 
         require("mason-tool-installer").setup({
+
             ensure_installed = {
                 "pyright",
                 "vtsls",
             },
 
-            auto_update = false,
             run_on_start = true,
+            auto_update = false,
         })
     end,
-    },
+},
     {
     "neovim/nvim-lspconfig",
     
