@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
-vim.g.maplocalleader = " " w
+vim.g.maplocalleader = " "
 
 require("config.keymaps")
 require("config.lazy")
